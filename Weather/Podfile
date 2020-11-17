@@ -1,0 +1,12 @@
+platform :ios, '14.1'
+
+target 'Weather' do
+  # swift语言的动态framework
+  use_frameworks!
+
+  # 需要的开源库
+    pod 'SwiftyJSON'
+    pod 'Alamofire'
+    pod 'SVProgressHUD'
+
+end
