@@ -64,8 +64,6 @@
 				1FEE1AB820280EE900972B0F /* Controller */,
 				1FEE1AB720280EE100972B0F /* Model */,
 				1FEE1AB620280ED700972B0F /* View */,
-				1FEE1AB920280F6F00972B0F /* Images.xcassets */,
-				1FEE1AAD20280EC100972B0F /* LaunchScreen.storyboard */,
 				1FEE1AB020280EC100972B0F /* Info.plist */,
 			);
 			path = Weather;
@@ -74,6 +72,8 @@
 		1FEE1AB620280ED700972B0F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1FEE1AB920280F6F00972B0F /* Images.xcassets */,
+				1FEE1AAD20280EC100972B0F /* LaunchScreen.storyboard */,
 				1FEE1ABD20280F8F00972B0F /* Main.storyboard */,
 			);
 			path = View;

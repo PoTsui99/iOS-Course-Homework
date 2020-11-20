@@ -2,14 +2,12 @@ import UIKit
 
 class WeatherDataModel {
   
-  //Declare your model variables here
   var temperature: Int = 0
   var condition: Int = 0
   var city: String = ""
   var weatherIconName: String = ""
   
-  //This method turns a condition code into the name of the weather condition image
-  
+  // 把天气状况码转换成UI天气图标
   func updateWeatherIcon(condition: Int) -> String {
     
     switch (condition) {
