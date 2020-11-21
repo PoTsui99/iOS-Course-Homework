@@ -30,6 +30,7 @@
 
 ```ruby
 # in: Podfile
+# 这里显示了所需的CocoaPods管理的开源框架
 platform :ios, '14.1'
 
 target 'Weather' do
@@ -43,6 +44,30 @@ target 'Weather' do
 
 end
 ```
+
+```swift
+// in: WeatherViewController.swift
+// 天气API
+let WEATHER_URL = "http://api.openweathermap.org/data/2.5/weather"
+let APP_ID = "c0368fd69694c4dc0d8caa4a32946ec9"
+
+// MARK: - 网络连接,获得数据,更新天气数据
+func getWeatherData(url: String, parameters: [String: String]) {
+  Alamofire.request(url, method: .get, parameters: parameters).responseJSON {
+    response in
+    if response.result.isSuccess {
+      print("成功获取气象数据")
+      let weatherJSON: JSON = JSON(response.result.value!)
+      self.updateWeatherData(json: weatherJSON)
+    }else {
+      print("错误 \(String(describing: response.result.error))")
+      self.cityLabel.text = "连接问题"
+    }
+  }
+}
+```
+
+
 
 ​																																																55180520 崔博
 
