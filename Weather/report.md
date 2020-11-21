@@ -24,7 +24,25 @@
 
 ​		目前在Github上开源,仓库地址:`https://github.com/PoTsui99/iOS_Homework`.
 
-​																																						
+
+
+## 附关键代码:                                                    
+
+```ruby
+# in: Podfile
+platform :ios, '14.1'
+
+target 'Weather' do
+  # swift语言的动态framework
+  use_frameworks!
+
+  # 需要的开源库
+    pod 'SwiftyJSON'
+    pod 'Alamofire'
+    pod 'SVProgressHUD'
+
+end
+```
 
 ​																																																55180520 崔博
 
